@@ -16,7 +16,7 @@ document.getElementById("player_answer").innerHTML = "turno de resposta- " + pla
 function send(){
     //pegar a palavra inserida pelo usuario e deixar minuscula caso tenha alguma palavra maiuscula
     getWord = document.getElementById("word").value;
-    var word=getWord.toLowerCase();
+    word=getWord.toLowerCase();
 
     //pegar e substituir as letras
     letra1=word.charAt(1);
@@ -44,8 +44,8 @@ function send(){
 
 //Aula 92
 //Botão checar
-var answer_turn = "player1";
-var question_turn = "player2";
+var answer_turn = "player2";
+var question_turn = "player1";
 
 function check(){
 get_answer = document.getElementById("checkBox").value;
@@ -54,7 +54,7 @@ console.log(resposta);
 console.log(word);
 if(word == resposta){
     console.log("entrei");
-    if(question_turn == "player2"){
+    if(question_turn == "player1"){
         player2Score = player2Score + 1;
         document.getElementById("player2_score").innerHTML = player2Score;
     } else {
